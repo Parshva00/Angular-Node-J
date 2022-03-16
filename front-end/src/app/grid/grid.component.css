@@ -1,0 +1,57 @@
+table, th, td {
+    border: 1px solid black;
+  }
+h1
+{
+    text-align: center;
+    color: blueviolet;
+}  
+  
+#users{
+    font-family: "Trebuchet MS", Arial, Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}  
+
+#users td, #users th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+#users tr:nth-child(even){background-color: bisque;}
+
+#users tr:nth-child(odd){background-color: rgb(225, 192, 229);}
+
+/* #users tr:hover {background-color: whitesmoke;} */
+
+#users th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: blueviolet;
+    color: white;
+}
+
+.edit {
+    background-color: #4CAF50; /* Green */
+    color: black;
+    padding: 5px 22px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+ /* .edit {
+     background-color: lightgreen;
+    font-size: 20px;
+    margin-right: 10px;
+} */
+
+.Delete {
+    background-color: red;
+    font-size: 15px;
+    padding: 5px 12px;
+    margin: 4px 2px;
+}

@@ -1,0 +1,53 @@
+<h1> 
+  <b>Add/Edit new User Data</b>
+</h1>
+<a [routerLink]="['/grid']">
+  <b>Grid Data</b>
+</a>
+<div>
+<form [formGroup]="userprofileform" (ngSubmit)="onSubmit(userprofileform.value)" >
+  <label>
+    First Name:
+  </label>
+  <input type="text" formControlName="user_first_name"><br><br>
+  <label>
+    Last Name:
+  </label>
+  <input type="text" formControlName="user_last_name"><br><br>
+  <label>
+    Organization Name:
+  </label>
+  <input type="text" name="user_organization_name" formControlName="user_organization_name"><br><br>
+  <label>
+    Email Id:
+  </label>
+  <input type="text" name="user_email" formControlName="user_email"><br><br>
+  <label>
+    Created By:
+  </label>
+  <input type="text" name="user_created_by" formControlName="user_created_by"><br><br>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="button"  class="Delete data" (click)="deleteData()">Delete Data</button>
+  <div *ngIf="isEmpty">
+    <label>
+      Data not available
+    </label>
+  </div>
+</form>
+</div>
+
+<!-- <div class="border">
+  <button class="btn btn-md btn-outline-primary">
+    <i id="my icon"class="fa fa-user"></i>Grid</button>
+    <td>
+      <button class="btn btn-sm btn-info">
+        <i class="fa fa-search"></i>Details</button>
+      <button class="btn btn-sm btn-warning">
+        <i class="fa fa-edit"></i>Edit</button>
+      <button class="btn btn-sm btn-danger">
+        <i class="fa fa-remove"></i>Delete</button>
+    </td> 
+</div> -->
+
+

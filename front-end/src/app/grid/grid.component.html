@@ -1,0 +1,76 @@
+<h1>User-data Table</h1>
+<!-- <div ngIf="alert" class="alert alert-danger alert-dismissible fade show" role="alert">
+  <strong>No Data Available</strong> Data does not exist
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div> -->
+<table id="users">
+  <tr>
+    <th>User Id</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Organization Name</th>
+    <th>Email</th>
+    <th>Photo</th>
+    <th>Created Date</th>
+    <th>Created By</th>
+    <th>Updated Date</th>
+    <th>Updated By</th>
+    <th>User Status</th>
+    <th>User Confirmation Date</th>
+    <th>User Confirmation Status</th>
+    <th>User Freeze</th>
+    <th>Edit/Delete Data</th>
+  </tr>
+
+  <tr *ngFor="let com of userdata">
+    <td>{{com.user_id}}</td>
+    <td>{{com.user_first_name}}</td>
+    <td>{{com.user_last_name}}</td>
+    <td>{{com.user_organization_name}}</td>
+    <td>{{com.user_email}}</td>
+    <td>{{com.user_photo}}</td>
+    <td>{{com.user_created_date}}</td>
+    <td>{{com.user_created_by}}</td>
+    <td>{{com.user_updated_date}}</td>
+    <td>{{com.user_updated_by}}</td>
+    <td>{{com.user_status}}</td>
+    <td>{{com.user_confirmation_date}}</td>
+    <td>{{com.user_confirmation_status}}</td>
+    <td>{{com.user_freeze}}</td>
+    <td>
+
+      <button id="edit" class="edit" (click)="delete(com.user_id)">Edit</button>
+      <button id="delete" type="button" class="Delete" (click)="delete(com.user_id)">Delete </button>
+    </td>
+  </tr>
+
+</table>
+
+<!-- <div class="row">
+    <div class="col-sm">
+      <a href="/User-Data"
+       role="button"
+       class="btn btn-outline-primary btn-lg btn-block text-center">
+      <span><i class="fa fa-users"></i></span>
+      <br>User-Data
+    </a>
+    </div>
+
+  </div>
+  <h1>User-data Table</h1>
+  <hr>
+  <table id="users">
+    <tr>
+      <th *ngFor = "let column of user ">
+        {{column}}
+      </th>
+    </tr>
+<tr *ngFor = "let row of data">
+  <td *ngFor = "let column of user">
+    {{row[column]}}
+  </td>
+
+</tr>
+  </table> -->
